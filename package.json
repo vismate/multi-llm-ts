@@ -25,7 +25,8 @@
     "test:watch": "vitest --watch",
     "test:ui": "vitest --ui --coverage.enabled=true",
     "test:real": "REAL_API=1 vitest tests/unit/engine_real_apis.test.ts",
-    "example": "tsx ./example/index.ts"
+    "example": "tsx ./example/index.ts",
+    "prepare": "npm run build"
   },
   "author": {
     "name": "Nicolas Bonamy",
