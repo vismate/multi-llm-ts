@@ -498,7 +498,7 @@ export default abstract class LlmEngine {
       if (validation.decision !== 'allow') {
         yield {
           type: 'result',
-          result: { error: `Tool ${tool} execution denied by validation function.` },
+          result: { error: `Tool ${tool} execution denied by validation function. Reason: ${validation.reason || 'forbidden' }` },
           validation
         }
         return

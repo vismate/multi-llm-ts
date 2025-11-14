@@ -98,6 +98,7 @@ export type LlmToolExecutionValidationDecision = 'allow'|'deny'|'abort'
 
 export type LlmToolExecutionValidationResponse = {
   decision: LlmToolExecutionValidationDecision
+  reason?: string,
   extra?: any
 }
 
